@@ -113,3 +113,6 @@ There are no authentication, as we do not use token. All you need to do is allow
 
 Click in the buttom `Add` and add you IP or network.
 
+## TODO
+1. Add secure calls
+2. Here are some Odin/Cloudlue API not all (work in progress)
