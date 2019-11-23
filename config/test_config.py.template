@@ -1,0 +1,72 @@
+#Sorry for that file, I have no time to use something better
+
+### URL
+bss_server_url = 'http://IP:PORT/RPC2'
+oss_server_url = 'http://IP:PORT/RPC2'
+
+### IDs
+# BSS > Operations > Customers
+account_id = 1000000
+# BSS > Operations > Subscriptions
+subscription_id = 1000000
+# BSS > Operations > Subscriptions (this is a subscription)
+subscription_param_id = 1000000
+# BSS > Operations > Customers > {any customer} > Users
+user_id = 1000000
+# 1 is main vendor, but the system allows to create Resellers (also are vendors)
+# You can use 1 or any reseller: BSS > Resellers  (Account ID is the vendor_id)
+vendor_id = 1
+# BSS > Products > Orders (maybe you need to click on 'Select Columns' and select "Order ID")
+order_id = 1
+
+### Plans
+# BSS > Products > Service Plans 
+plan_id = 1
+# BSS > Products > Service Plans > Plan Categories 
+plan_category_id = 1
+# BSS > Products > Service Plans > {any plan} > Resource Rates
+resource_rate_id = 1
+
+### APS IDs
+# OSS > Applications
+app_id = 1
+# OSS > Applications > {any application} > Instances
+application_instance_id = 1
+
+### Others
+# Any domain name in the system
+full_domain_name = 'huawei.net'
+# Each servive has its own params
+# SELECT DISTINCT "IdParameter" FROM "SubscrParamValue" WHERE "subscriptionID" = {subscription ID}
+# Take care, some subscription has no param_id
+param_id = 'DomainID'
+# Unfortunately this value is hard-coded. But you can see it here: 
+# https://docs.cloudblue.com/oa/7.4/premium/content/Billing-Public-API-Reference/GetLastToServStatusTransitionDate_API.htm?Highlight=GetLastToServStatusTransitionDate_API
+#ServStatus – subscription service status: 
+#  10 – Not Provisioned
+#  20 – Provisioning
+#  30 – Stopped
+#  40 – Starting
+#  50 – Running
+#  60 – Stopping
+#  70 – Removing
+#  80 – Changing Plan
+#  90 – Removed
+serv_status = 50
+
+### Orders Flow
+# BSS > System > Settings > Order Processing > Order Flow > General
+order_type = 'SO'
+#BSS > System > Settings > Order Processing > Order Flow > General > {any order type} > Order Statuses
+order_status = 'PF'
+
+### Notification Template
+# BSS > System > Settings > Notifications > Notification Templates
+template_name = 'template_name'
+# If the above template needs of place holders (only who developed the template knows it)
+place_holders = {
+    "key1": "value1",
+    "key2": "value2",
+    "key3": "value3",
+    "keyn": "valuen"
+}
