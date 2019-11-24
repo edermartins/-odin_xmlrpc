@@ -10,6 +10,12 @@ I based all the services in the Premium Odin Service Automation [7.4](https://do
 
 Or you also can just copy it into you project.
 
+### Dependnces
+This implementation depends of `xmlrpclib` and you can use this command to import it:
+```
+pip install xmlrpclib
+```
+
 ### How to test
 There are two ways do do it. A very simple interactive test (addroc can test one function at time) and unittest (call all methods).
 
