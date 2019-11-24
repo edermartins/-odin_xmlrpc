@@ -10,7 +10,7 @@ I based all the services in the Premium Odin Service Automation [7.4](https://do
 
 Or you also can just copy it into you project.
 
-### Dependnces
+### Dependences
 This implementation depends of `xmlrpclib` and you can use this command to import it:
 ```
 pip install xmlrpclib
